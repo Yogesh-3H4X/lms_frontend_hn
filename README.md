@@ -40,11 +40,43 @@ creat tailwindcss init(creat fikle)
 4. at the tailwind directives at the index.css file
 
 '''  
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 '''
+
 6. adding pluggins and dependency
+
+
+
 '''
 npm install @reduxjs/toolkit react-redux react-router-dom react-icons react-chartjs-2 chart.js daisyui axios react-hot-toast @tailwindcss/line-clamp
 '''
+
+### configures auto import sort esline
+
+
+1. install simpal import sore  
+
+'''
+npm 1 -d eslint-simple-import-sort
+'''
+
+2. add rule in .eslint.cjs
+
+'''
+'simple-import-sort/import': 'error',
+'''
+3. add simple-import sort plugin in 'eslint.js'
+'''
+ plugins:['react-refresh','simple-react-sort'],
+ '''
+4. to enable auto impprt save vs code
+ '''
+ "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  }
+ '''
