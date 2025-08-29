@@ -1,4 +1,5 @@
 //component import
+import { Toaster } from 'react-hot-toast';
 import App from './App.jsx'
 //css imoprts
 import './index.css'
@@ -9,7 +10,8 @@ import { BrowserRouter } from 'react-router-dom';
 createRoot(document.getElementById('root')).render(
   
 <BrowserRouter>
-    <Ap/>
+    <App/>
+      <Toaster />
 </BrowserRouter>
   
 );
