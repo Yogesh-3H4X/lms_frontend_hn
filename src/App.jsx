@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-    lms new project 
+    lms new project
     </>
   )
 }
