@@ -70,11 +70,17 @@ npm 1 -d eslint-simple-import-sort
 '''
 'simple-import-sort/import': 'error',
 '''
+
+
 3. add simple-import sort plugin in 'eslint.js'
+
 '''
  plugins:['react-refresh','simple-react-sort'],
  '''
+
+
 4. to enable auto impprt save vs code
+
  '''
  "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
