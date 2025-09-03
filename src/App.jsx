@@ -1,15 +1,26 @@
-
-import { Route, Routes } from 'react-router-dom'
 import './App.css'
+import { Routes, Route } from "react-router-dom"
+import Homepage from  './Pages/Homepage.jsx'
+import HomeLayout from './Layouts/HomeLayout.jsx';
 
 function App() { 
 
   return (
+
+  
     <>
-   <Routes> 
-    {/*<route path="/" element = {<home/>}></route>*/}
-   </Routes>
+ 
+  
+<Routes>
+   <Route path="/" element={<Homepage />} />
+</Routes>
+
+
+  {/* <Footer/>  */}
+ 
+
     </>
+
   )
 }
 

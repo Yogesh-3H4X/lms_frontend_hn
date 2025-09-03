@@ -6,5 +6,9 @@ body {
   margin: auto;
   max-width: 1440px;
   position: relative;
-  background: red;
+  background: white;
+}
+body, html {
+  margin: 0;
+  padding: 0;
 }

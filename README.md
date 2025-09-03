@@ -35,9 +35,10 @@ creat tailwindcss init(creat fikle)
 
 3. add file extention to tailwind config file in the content property
 '''
-["./src/**/*.{js,ts,jsx,tsx}"],
+["./src/**/*.{js,ts,jsx,tsx},./index.html"]
 '''
 4. at the tailwind directives at the index.css file
+
 
 '''  
 
