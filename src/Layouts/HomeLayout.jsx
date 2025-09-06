@@ -8,6 +8,8 @@ function HomeLayout({ children }) {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
+  
+
   // for checking if user is logged in
   const isloggedIn = useSelector((state) => state?.auth?.isloggedIn);
 
@@ -57,14 +59,14 @@ function HomeLayout({ children }) {
         <div className="drawer-side w-0">
           <label htmlFor="my-drawer" className="drawer-overlay"></label>
 
-          <ul className="menu p-4 w-48 sm:w-80 bg-black text-white relative space-y-3 bg-emerald-900 px-5 py-3 rounded-md font-semibold text-lg cursor-pointer 
+          <ul className="menu p-4 w-48  h-[100] sm:w-80 bg-black text-white relative space-y-3 bg-emerald-900 px-5 py-3 rounded-md font-semibold text-lg cursor-pointer 
                         transition-all duration-500 ease-[cubic-bezier(.17,.67,.83,.67)]
                         transform hover:rotate-y-6 border border-emerald-500
                         shadow-lg hover:shadow-emerald-400/70">
-
+ 
             {/* Close button */}
 
-            <li className="w-fit absolute right-2 z-50">
+            <li className="w-fit absolute right-2 z-50 ">
               <button onClick={hideDrawer}>
                 <AiFillCloseCircle size={24} />
               </button>
@@ -72,15 +74,18 @@ function HomeLayout({ children }) {
 
             {/* Navigation Links */}
             <li>
-              <Link to="/home">Home</Link>
+              <Link to="/">Home</Link>
             </li>
 
             {isloggedIn && role === "ADMIN" && (
               <li>
                 <Link to="/admin/dashboard">Admin Dashboard</Link>
               </li>
-              
+
             )}
+            <li>
+              <Link to="/courses">All courses</Link>
+            </li>
 
             <li>
               <Link to="/contact">Contact Us</Link>

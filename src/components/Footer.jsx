@@ -11,7 +11,7 @@ function Footer() {
       <footer
   className="fixed  w-full bg-gray-800 h-[10vh] flex  sm:flex-row  justify-between text-white sm:px-20 py-4 bottom-0">
 
-        <section className="text-lg text-white-500">
+        <section className="text-lg text-white-500 text-5xl font-bold flex flex-wrap justify-center bg-gradient-to-r from-pink-500 via-yellow-400 to-blue-500 bg-clip-text text-transparent">
           copyright {year} | All rights reserved
         </section>
 
@@ -22,7 +22,7 @@ function Footer() {
           <a className="hover:text-yellow-500 transition-all ease-in-out duration-300">
             <BsInstagram />
           </a>
-          <a className="hover:text-yellow-500 transition-all ease-in-out duration-300">
+          <a className="hover:text-yellow-500 transition-all ease-in-out duration-300 ">
             <BsLinkedin />
           </a>
           <a className="hover:text-yellow-500 transition-all ease-in-out duration-300">
