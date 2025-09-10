@@ -1,7 +1,7 @@
 import { AiFillCloseCircle } from "react-icons/ai";
 import { FiMenu } from "react-icons/fi";
 import { Link, useNavigate } from "react-router-dom";
-import Footer from "../Components/Footer";
+import Footer from "../Components/Footer.jsx";
 import { useDispatch, useSelector } from "react-redux";
 
 function HomeLayout({ children }) {
