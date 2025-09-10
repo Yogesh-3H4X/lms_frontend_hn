@@ -112,7 +112,7 @@ function HomeLayout({ children }) {
                         transform hover:scale-110 hover:rotate-x-6 hover:rotate-y-6 border border-yellow-500
                         shadow-lg hover:shadow-yellow-400/70 wl-8px">
 
-        <Link to="/login">Signup</Link>
+        <Link to="/Singup">Signup</Link>
       </button>
     </div>
   </li>
